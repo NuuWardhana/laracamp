@@ -23,6 +23,7 @@ class CreateChekoutsTable extends Migration
             $table->boolean('is_paid')->default(false);
             $table->timestamps();
             $table->softDeletes();
+            
         });
     }
 
@@ -34,5 +35,6 @@ class CreateChekoutsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('chekouts');
+        
     }
 }
